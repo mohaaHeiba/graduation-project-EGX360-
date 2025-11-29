@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS bookmarks;
+DROP TABLE IF EXISTS user_watchlist;
+DROP TABLE IF EXISTS comment_votes;
+DROP TABLE IF EXISTS comments;
+DROP TABLE IF EXISTS post_votes;
+DROP TABLE IF EXISTS follows;
+DROP TABLE IF EXISTS posts;

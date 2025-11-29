@@ -1,0 +1,25 @@
+do $$ begin
+  drop policy if exists "Public profiles viewable" on profiles;
+  drop policy if exists "Users update own" on profiles;
+  drop policy if exists "Public posts viewable" on posts;
+  drop policy if exists "Users insert own posts" on posts;
+  drop policy if exists "Users delete own posts" on posts;
+  drop policy if exists "Public comments viewable" on comments;
+  drop policy if exists "Users insert own comments" on comments;
+  drop policy if exists "Users delete own comments" on comments;
+  drop policy if exists "Public votes viewable" on post_votes;
+  drop policy if exists "Users vote posts" on post_votes;
+  drop policy if exists "Users unvote posts" on post_votes;
+  drop policy if exists "Public comment votes viewable" on comment_votes;
+  drop policy if exists "Users vote comments" on comment_votes;
+  drop policy if exists "Users unvote comments" on comment_votes;
+  drop policy if exists "Public follows viewable" on follows;
+  drop policy if exists "Users follow" on follows;
+  drop policy if exists "Users unfollow" on follows;
+  drop policy if exists "Users view own bookmarks" on bookmarks;
+  drop policy if exists "Users bookmark posts" on bookmarks;
+  drop policy if exists "Users remove bookmark" on bookmarks;
+  drop policy if exists "Users view own watchlist" on user_watchlist;
+  drop policy if exists "Users add to watchlist" on user_watchlist;
+  drop policy if exists "Users remove from watchlist" on user_watchlist;
+end $$;
