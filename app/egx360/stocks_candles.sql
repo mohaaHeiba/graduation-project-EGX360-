@@ -1,0 +1,9 @@
+CREATE TABLE tmg_candles (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    timestamp TIMESTAMPTZ NOT NULL,
+    open NUMERIC(12,2) NOT NULL,
+    high NUMERIC(12,2) NOT NULL,
+    low NUMERIC(12,2) NOT NULL,
+    close NUMERIC(12,2) NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT now()
+);
